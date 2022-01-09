@@ -39,13 +39,15 @@ const PDFConverter = () => {
         <div class="form">
           <form id="form" onSubmit={convertToPDF}>
             <p>
-              {" "}
-              <label>Any document (e.g. docx, jpg, xlsx):</label>
-              {/* <br></br> */}
-              <input type="file" id="file" />
-              <label for="file" class="btn-1">
-                Upload File
+              <label for="fileInput">
+                Any documment (e.g. docx, jpg, xlsx):
               </label>
+              {/* <hr /> */}
+              <input
+                type="file"
+                name="file"
+                id="fileInput"
+              />
             </p>
             <p>
               <input type="submit" value="Submit" />
